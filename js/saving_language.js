@@ -21,4 +21,5 @@ contuine.onclick = () => {
     console.log(saved_language_level.value);
     localStorage.setItem("language", saved_language.value);
     localStorage.setItem("language-level", saved_language_level.value);
+    window.location.href = "../selection.html"
 };
