@@ -10,3 +10,39 @@
     padding: 10px 20px;
     font-size: 16px;
 }
+
+/* Main wrapper */
+#word-container {
+    width: 600px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* AI message bubble */
+.practice-container {
+    align-self: flex-start;
+    max-width: 75%;
+    padding: 15px 20px;
+    background: #e6e6e6;
+    border: 2px solid #c8c8c8;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 0 6px rgba(0,0,0,0.08);
+}
+
+/* User response bubble (textarea) */
+#answer {
+    align-self: flex-end;
+    width: 75%;
+    min-height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #c8c8c8;
+    border-radius: 12px;
+    background: #fafafa;
+    resize: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.08);
+}
