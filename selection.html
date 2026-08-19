@@ -11,7 +11,7 @@
         <h1>Please select an option</h1>
         <div class="button-container">
 <!--            for practice-->
-            <div id="practice">
+            <div id="practice" onclick="redirect('practice')">
                 <img src="assets/two-people-conversing-with-language-symbols-solid-icon-multilingual-communication-translation-and-language-exchange-silhouette-symbol-isolated-illustration-vector.jpg" alt="conversation">
                 <p>Practice</p>
             </div>
@@ -28,10 +28,12 @@
         //helping with the redirect function
         function redirect(id){
             if (id === "practice"){
+                console.log("redirecting to practice");
                 window.location.href = "practice.html";
                 localStorage.setItem("area", "Practice")
             }
             else if (id === "drilling"){
+                console.log("redirecting to drilling");
                 window.location.href = "drilling.html";
                 localStorage.setItem("area", "Drilling")
             }
