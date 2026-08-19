@@ -1,0 +1,12 @@
+/* Button container */
+.button-container {
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Go Back button (inherits main.css button style) */
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
