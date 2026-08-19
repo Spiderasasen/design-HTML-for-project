@@ -32,7 +32,7 @@ body {
     cursor: pointer;
 }
 
-#continue-button {
+button {
     margin-top: 25px;
     width: 100%;
     padding: 12px;
@@ -44,7 +44,7 @@ body {
     cursor: pointer;
 }
 
-#continue-button:hover {
+button:hover {
     background: #3b5a8a;
 }
 .language-level-selection select{
