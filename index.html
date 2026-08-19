@@ -16,6 +16,14 @@
                 <option value="fr">French</option>
             </select>
         </div>
+        <div class="language-level-selection" id="language-level-selection">
+            <select id="language-level">
+                <option value="">Please select a language level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
         <button id="continue-button">Continue</button>
     </main>
 </body>
@@ -24,6 +32,8 @@
 <script>
     //removes the languages from the local storage from past sessions
     console.log(`removing ${localStorage.getItem("language")} from local storage`)
+    console.log(`removing ${localStorage.getItem("language-level")} from local storage`)
     localStorage.removeItem("language");
+    localStorage.removeItem("language-level");
 </script>
 </html>
