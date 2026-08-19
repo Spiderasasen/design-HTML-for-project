@@ -15,11 +15,24 @@ saved_language.addEventListener("change", () => {
     }
 });
 
+//checking if the user has selected a language to contuine
+function checkLanguage() {
+    if (saved_language.value !== "" && saved_language_level.value !== "") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 //simple contuine section
 contuine.onclick = () => {
+    if (!checkLanguage()) {
+        alert("Please select a language or level");
+        return;
+    }
     console.log(saved_language.value);
     console.log(saved_language_level.value);
     localStorage.setItem("language", saved_language.value);
     localStorage.setItem("language-level", saved_language_level.value);
-    window.location.href = "../selection.html"
+    window.location.href = "selection.html";
 };
