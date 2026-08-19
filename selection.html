@@ -11,17 +11,35 @@
         <h1>Please select an option</h1>
         <div class="button-container">
 <!--            for practice-->
-            <div>
-                <img id="practice" src="assets/two-people-conversing-with-language-symbols-solid-icon-multilingual-communication-translation-and-language-exchange-silhouette-symbol-isolated-illustration-vector.jpg" alt="conversation">
+            <div id="practice">
+                <img src="assets/two-people-conversing-with-language-symbols-solid-icon-multilingual-communication-translation-and-language-exchange-silhouette-symbol-isolated-illustration-vector.jpg" alt="conversation">
                 <p>Practice</p>
             </div>
 <!--            for drilling-->
-            <div onclick="window.location.href='drilling.html'">
-                <img id="drilling" src="assets/477-4770692_transparent-study-icon-png-studying-clipart-black-and.png" alt="study">
+            <div onclick="redirect('drilling')" id="Drilling">
+                <img src="assets/477-4770692_transparent-study-icon-png-studying-clipart-black-and.png" alt="study">
                 <p>Drilling</p>
             </div>
         </div>
         <button onclick="window.location.href='index.html'">Go Back</button>
     </main>
+
+    <script>
+        //helping with the redirect function
+        function redirect(id){
+            if (id === "practice"){
+                window.location.href = "practice.html";
+                localStorage.setItem("area", "practice")
+            }
+            else if (id === "drilling"){
+                window.location.href = "drilling.html";
+                localStorage.setItem("area", "drilling")
+            }
+        }
+
+        //just clearing the area in the local storage
+        console.log("removing: ",localStorage.getItem("area"));
+        localStorage.removeItem("area");
+    </script>
 </body>
 </html>
