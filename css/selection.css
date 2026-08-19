@@ -1,7 +1,42 @@
-img{
-    width: 25%;
-    height: 50%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
 }
-img:hover{
+
+main {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.button-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
     cursor: pointer;
+}
+
+.button-container img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 }
